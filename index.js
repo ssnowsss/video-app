@@ -38,7 +38,7 @@ app.use("/api/videos", videosRoute)
 app.use("/api/comments", commentsRoute)
 
 
-app.listen(8800, () => {
+app.listen(process.env.PORT || 8800, () => {
     connect()
     console.log("connected to backend");
 })
